@@ -1,0 +1,2 @@
+ALTER TABLE public.fabrics_db DROP CONSTRAINT fabrics_db_category_check;
+ALTER TABLE public.fabrics_db ADD CONSTRAINT fabrics_db_category_check CHECK (category = ANY (ARRAY['upholstery'::text, 'curtains'::text, 'local'::text, 'imported'::text]));

@@ -17,6 +17,7 @@ import Footer from "@/components/Footer";
 import FloatingSocial from "@/components/FloatingSocial";
 import IntroLoader from "@/components/IntroLoader";
 import BrandMarquee from "@/components/BrandMarquee";
+import AdUnit from "@/components/AdUnit";
 
 const categoryCards = [
   { label: "قماش تنجيد", desc: "أقمشة أنتريهات بألوان وخامات متنوعة", path: "/gallery?category=upholstery", image: categoryUpholstery },
@@ -112,6 +113,7 @@ const Index = () => {
       </section>
 
       <section className="container mx-auto px-4 py-16">
+        <AdUnit />
         <SectionHeader title="أقمشة مميزة" subtitle="اختيارات منتقاة بعناية لك" />
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {featured.map((f) => (
@@ -146,6 +148,7 @@ const Index = () => {
       </section>
 
       <section className="container mx-auto px-4 py-16">
+        <AdUnit />
         <SectionHeader title="الأكثر طلباً" subtitle="الأقمشة المفضلة لدى عملائنا" />
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {popular.map((f) => (
